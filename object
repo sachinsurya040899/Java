@@ -1,0 +1,17 @@
+public class Object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Object d=new Object();
+d.jamr();
+
+}
+	void print(Object object) {
+		System.out.println("Well Done!");
+}
+void jamr(){
+	
+	Object object = null;
+	print(object);
+}
+}
