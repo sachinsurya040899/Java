@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class GreaterThree {
+public static void main(String args[]) {
+	Scanner a=new Scanner(System.in);
+	int x=a.nextInt();
+	int y=a.nextInt();
+	int z=a.nextInt();  //Because input mismatch exception the not occur as we are given a parameter value in nextInt(5)
+if(x>y) {
+	if(x>z) {
+		System.out.println(x+"is greater");
+	}
+	else {
+		if(z>y) {
+			System.out.println(z+"is greater");
+		}
+	}
+}
+else {
+	if(y>z) {
+		System.out.println(y+"is greater");
+	}
+	else {
+		if(z>x) {
+			System.out.println(z+"\n");
+		}
+	}
+}
+
+}
+}
+
+/* #This logic is correct in NPTEL(All The Test Cases Are Passes In Private Test Case)
+ 		if(x>y && x>z) {
+			result=x;
+		}
+		else {
+			if(y>x && y>z) {
+				result=y;
+			}
+			else {
+				result=z;
+			}
+		}
+				
+		System.out.println(result);
+ */
