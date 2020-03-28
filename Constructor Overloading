@@ -1,0 +1,16 @@
+class ant{
+	 int a,b,c;
+	ant(int a,int b,int c){
+		this.a=a;this.b=b;this.c=c;
+		System.out.println(a+b+c);
+	}
+	ant(int a){
+		this(0,0,a);
+		System.out.println(a+b+c);
+	}
+}
+public class ConstructorOver {
+public static void main(String args[]) {
+ant a=new ant(4);
+}
+}
