@@ -1,0 +1,17 @@
+public class EvenButOddSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int sum=0;
+		int n=5;
+		for(int i=0;i<=n;i++) {
+			int e=2*i;
+			if(e%3==0) {
+				sum=sum+e;
+			}
+		}
+		System.out.println(sum);
+	}
+
+}
