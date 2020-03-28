@@ -1,0 +1,22 @@
+import java.util.*;
+public class ExcepName {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in); 
+	      int length = sc.nextInt(); 
+	      // create an array to save user input 
+	      int[] name = new int[length];
+	      int sum=0;//save the total sum of the array.
+	      try {
+	    	  for(int i=0;i<name.length;i++) {
+	    		  name[i]=sc.nextInt();
+	    		  sum=sum+name[i];
+	    	  }
+	    	  System.out.println(sum);
+	      }
+	      catch(Exception e) {
+	    	  System.out.println(e);
+	      }
+	}
+}
