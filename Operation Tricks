@@ -1,0 +1,28 @@
+public class Sample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int x=5;
+		int y=6;
+		int z=41;
+		int result=0;
+		if(x>y && x>z) {
+			result=x;
+		}
+		else {
+			if(y>x && y>z) {
+				result=y;
+			}
+			else {
+				result=z;
+			}
+		}
+				
+		System.out.println(result);
+		int a=8;
+		char d='2';
+		System.out.println(d+a);
+	}
+
+}
