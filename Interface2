@@ -1,0 +1,18 @@
+
+interface Number {
+    int findSqr(int i);  // Returns the square of n
+}
+class B implements Number{
+	  public int findSqr(int j){  //public access specifier is compulsary otherwise it will cause error
+	   return j*j; 
+	  }
+	}
+public class Intface {
+public static void main(String args[]) {
+	B a = new B();   //Create an object of class A
+    // Read a number from the keyboard
+    Scanner sc = new Scanner(System.in);  
+    int i = sc.nextInt();
+    System.out.print(a.findSqr(i)); 
+}
+}
