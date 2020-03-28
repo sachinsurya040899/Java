@@ -1,0 +1,12 @@
+
+public class ArrayError {
+public static void main(String argd[]) {
+	int a[]= {0,1,2,3,4};
+	int index=0;
+	while(a[index]==index) {
+		System.out.println(a[index]);
+		index++;
+	}
+}
+}
+//output: 0,1,2,3,4 with error
