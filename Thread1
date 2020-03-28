@@ -1,0 +1,17 @@
+class Question65 extends Thread{  
+	  public void run(){  
+	    System.out.println("Thread is running.");  
+	  }  
+}
+public class SetGetThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Question65 t=new Question65();  
+	    System.out.println("Name of thread 't':"+ t.getName());  
+	    t.setName("NPTEL");
+	    t.start();
+	    System.out.println("New name of thread 't':"+ t.getName());  
+	}
+
+}
