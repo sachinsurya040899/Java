@@ -1,0 +1,9 @@
+public class demo {
+public static void main(String args[]) {
+	Thread thread=Thread.currentThread();
+	Thread thread1=Thread.currentThread();
+	System.out.println(thread.isAlive());
+	System.out.println(thread.getId());
+	System.out.println(thread1.getId());
+}
+}
