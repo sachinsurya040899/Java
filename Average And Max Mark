@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class AverageAndMaxMark {
+	public static void main(String args[]) {
+Scanner sa=new Scanner(System.in);
+int a=5;
+System.out.println("Total number of subject is"+a);
+int []a1=new int[a];
+System.out.println("Enter The"+" "+a+" "+"subject mark");
+for(int i=0;i<a1.length;i++) {
+	a1[i]=sa.nextInt();
+}
+int sm=0;
+int max=0;
+for(int j=0;j<a1.length;j++) {
+	if(a1[j]>max) {
+		max=a1[j];
+	}
+    sm=sm+a1[j];
+}
+float t=sm/a;
+System.out.println("average mark"+" "+t);
+System.out.println("maximum mark is"+" "+max);
+}
+	}
