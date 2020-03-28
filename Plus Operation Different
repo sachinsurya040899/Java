@@ -1,0 +1,14 @@
+public class Plusoperator {
+public static void main(String args[]) {
+String a="Hello";
+String b="by";
+System.out.println(a+b);
+int c=10;
+int d=20;
+System.out.println(c+d);
+System.out.println(c+a);
+String v="3";
+System.out.println(a+d+v);
+System.out.println(c+d+v); //left to right we need to see so first two int are added and next string is concatenated
+}
+}
