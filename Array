@@ -1,0 +1,13 @@
+public class Array {
+public static void main(String args[]) {
+
+	char a[]= {'n','h','g'};
+	System.out.println(a[a.length-1]);
+	System.out.println(a[0]);
+	System.out.println(""+a[0]+a[a.length-1]);
+	System.out.println(""+a[a.length-1]+a[0]);
+	System.out.println("--------");
+	System.out.println(a[0]+a[a.length-1]);
+	System.out.println(a[a.length-1]+a[0]);
+}
+}
