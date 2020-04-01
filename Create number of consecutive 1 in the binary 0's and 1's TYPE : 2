@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Guvi {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int s1 = sc.nextInt();
+    String a=String.valueOf(s1);
+    char aa;
+    int u=0;
+    for(int i=0;i<a.length();i++) {
+    	aa=a.charAt(i);
+    	if(aa=='1') {
+    		u=u+1;
+    		
+    	}
+    	else
+    		u=0;
+    }
+    if(u>0)
+    System.out.println(u);
+    else
+    System.out.println("-1");
+  }
+}
+
+Input: 10111
+Output: 3
