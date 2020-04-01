@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Guvi {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int s1 = sc.nextInt();
+    String a=String.valueOf(s1);
+    char aa,a1;
+    int i=0,k=0,sum=0;
+    while(k!=a.length()) {
+    	aa= a.charAt(i);
+    	if(aa=='1') {
+    	if(k>0) {
+    		a1=a.charAt(i-1);
+    		if(a1=='1') 
+    			sum=sum+1;
+    	}
+    	else
+    		sum=sum+1;
+    	}
+    i++;
+    k++;
+    	}
+    System.out.println(sum);
+  }
+}
+
+input: 100111111
+output:6
