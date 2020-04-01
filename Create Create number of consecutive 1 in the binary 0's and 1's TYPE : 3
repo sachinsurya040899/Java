@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Guvi {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int s1 = sc.nextInt();
+    String a=String.valueOf(s1);
+    int cnt = 0,max=0;
+    for(int i=0;i<a.length();i++){
+       cnt=0;
+       while(i<a.length()&&a.charAt(i)=='1'){
+          cnt++;
+          i++;
+       }
+       if(cnt>max) max=cnt;
+    }
+    if(max>0)
+    System.out.println(max);
+    else
+    	System.out.println("-1");
+  }
+}
+
+Input: 10111
+Output:3
