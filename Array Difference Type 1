@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Guvi {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int s1 = sc.nextInt();
+    int s2= sc.nextInt();
+    int a[] = new int[s1];
+    int x=0,k=1;
+    for(int i=0;i<s1;i++) {
+    	a[i]=sc.nextInt();
+    }
+    for(int j=0;j<a.length;j++) {
+    
+    	if(k>=s1) {
+    		x=a[j]-a[0];
+    	}
+    	else {
+    	if(a[k]>a[j])
+    	x=a[k]-a[j];
+    	else
+    		x=a[j]-a[k];
+    	}
+    	if(x>s2)
+    		System.out.println("1");
+    	else
+    		System.out.println("0");
+    	k++;
+    	x=0;
+    }
+  }
+}
+
+
+Output Description:
+Print 1 if the difference is greater than ‘m’.
+
+Sample Input :
+5 15
+50 65 85 98 35
+Sample Output :
+0 1 0 1 0
