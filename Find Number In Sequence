@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+      int s=sc.nextInt();
+      int s1=sc.nextInt();
+      int a[]=new int[s];
+      int z=0;
+      for(int j=0;j<a.length;j++)
+        a[j]=sc.nextInt();
+      for(int i=0;i<a.length;i++)
+      {
+       if(a[i]==s1){
+       z=a[i];
+       }
+      }
+      if(z==s1)
+        System.out.println("yes");
+      else
+        System.out.println("no");
+    }
+}
+
+
+
+
+
+Given 2 numbers N and K followed by elements of N .Print 'yes' if K exists else print 'no'.
+Sample Testcase :
+INPUT
+4 2
+1 2 3 3
+OUTPUT
+yes
