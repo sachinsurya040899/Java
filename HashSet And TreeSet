@@ -29,3 +29,6 @@ Output:
 
 Set output without the duplicates[Set, Example, Geeks, for]
 Sorted Set after passing into TreeSet[Example, For, Geeks, Set]
+
+
+Note: As we can see the duplicate entry “Geeks” is ignored in the final output, Set interface doesn’t allow duplicate entries.
