@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Guvi2 {
+
+	public static void main(String[] args) {
+// TODO Auto-generated method stub
+		
+		 Scanner ss=new Scanner(System.in);
+	        String s=ss.nextLine();
+	      int a=s.length();
+	      String temp="";    //HERE BE CAREFUL WITH SPACE N BETWEEN THE DOUBLE QOUTS MEANS ERROR SO NO SPACE BETWEEN THE DOUBLE QOUTS
+	      for(int i=a-1;i>=0;i--)
+	        temp=temp+s.charAt(i);
+	      if(s.equals(temp))
+	        System.out.println("1");
+	      else
+	        System.out.println("0");
+}
+	}
+  
+  
+  Input: sas
+  output: 1 (Since it is palindrome)
