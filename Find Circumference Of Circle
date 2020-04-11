@@ -1,0 +1,25 @@
+import java.math.*;
+import java.text.DecimalFormat;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sa=new Scanner(System.in);
+      DecimalFormat x=new DecimalFormat("##.##");
+      double a=sa.nextDouble();
+      if(a>0)
+      {
+       double h=2*Math.PI*a;
+       System.out.println(x.format(h)); 
+      }
+      else{
+       System.out.println("Error");
+      }
+    }
+}
+
+
+Input: 2
+Output: 12.57
+
+Input: 0.4
+Output: 2.51
