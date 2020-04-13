@@ -31,3 +31,5 @@ DELETE THE LAST FOR LOOP AND ADD THIS
 
  String d=String.join(" ",tree);
     System.out.println(d);
+    
+    Output: I am cena john
