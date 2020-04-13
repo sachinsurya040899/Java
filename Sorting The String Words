@@ -1,0 +1,28 @@
+import java.util.Arrays;
+import java.util.Scanner;
+class Guvi2{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+   sc.nextLine();
+    String s=sc.nextLine();
+    String[]s1=s.split(" ");
+    for(int i=0;i<s1.length;i++) {
+    	for(int j=1;j<s1.length;j++) {
+    		if(s1[j-1].compareTo(s1[j])>0) {
+    			String temp=s1[j-1];
+    			s1[j-1]=s1[j];
+    			s1[j]=temp;
+    		}
+    	}
+    }
+    String aas=String.join(" ", s1);
+    System.out.println(aas);
+    }
+}
+
+
+Input: 3
+       ss aa
+       
+Output: aa ss
