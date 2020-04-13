@@ -1,0 +1,31 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+class Guvi2{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    String s=sc.nextLine();
+    String s1[]=s.split(" ");
+    HashSet<String> tree=new HashSet<>();
+    for(int i=0;i<s1.length;i++) {
+    	if(!tree.contains(s1[i]))
+    		tree.add(s1[i]);
+    }
+    for(String x:tree)
+    	System.out.println(x);
+    }
+}
+
+Input: I am john cena cena john
+Output: 
+
+
+
+
+
+
+
+To  PRINT IN THE SAME LINE THEN REMOVE THE LAST FOR LOOP AND ADD THIS TWO LINES OF CODE
+
+ String d=String.join(" ",tree);
+    System.out.println(d);
