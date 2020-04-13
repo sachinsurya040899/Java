@@ -1,0 +1,33 @@
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.TreeSet;
+class Guvi2{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    String s=sc.nextLine();
+    String s1[]=s.split(" ");
+    TreeSet<String> tree=new TreeSet<>();
+    for(int i=0;i<s1.length;i++) {
+    	if(!tree.contains(s1[i]))
+    		tree.add(s1[i]);
+    }
+    for(String x:tree)
+    	System.out.println(x);
+    }
+}
+
+
+
+Input: I am john cena cena john
+Output :I
+am
+cena
+john
+
+
+
+To PRINT THE OUTPUT IN SAME LINE 
+DELETE THE LAST FOR LOOP AND ADD THIS
+
+ String d=String.join(" ",tree);
+    System.out.println(d);
