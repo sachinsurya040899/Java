@@ -18,6 +18,11 @@ class Guvi2{
 
 Input: I am john cena cena john
 Output: 
+I
+john
+cena
+am
+
 
 
 
@@ -29,3 +34,5 @@ To  PRINT IN THE SAME LINE THEN REMOVE THE LAST FOR LOOP AND ADD THIS TWO LINES 
 
  String d=String.join(" ",tree);
     System.out.println(d);
+    
+    Output: I john cena am
