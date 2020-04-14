@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Guvi {
+  public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	    int a=sc.nextInt();
+	    sc.nextLine();
+	    String s=sc.nextLine();
+	    String[]s1=s.split(" ");
+	    for(int i=0;i<s1.length;i++) {
+	    	for(int j=1;j<s1.length;j++) {
+	    		if(s1[j-1].compareTo(s1[j])>0) {
+	    			String temp=s1[j-1];
+	    			s1[j-1]=s1[j];
+	    			s1[j]=temp;
+	    		}
+	    	}
+	    }
+	    String aas=String.join(" ", s1);
+	    System.out.println(aas);
+  }
+}
+
+This A Java 8 Program Because To Join The Words In String Which Was Split By Split Method  We Use Java 8 Because We Use Join Method It Is Java 8
+
+Input:
+3
+InfinityWar EndGame Avengers
+
+Output: Avengers EndGame InfinityWar
+
+
+
+
+Ria is a 5 year old girl. Her mother wants to teach her how to sort words in the same order that they appear in a dictionary. She decides to write a program to sort a given set of strings based on their alphabetical order. Help Ria’s mother to complete the program.
+
+ 
+
+Input Description:
+A set of N strings
+
+Output Description:
+Alphabetically sorted set of strings
+
+Sample Input :
+3
+InfinityWar EndGame Avengers
+Sample Output :
+Avengers EndGame InfinityWar
