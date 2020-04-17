@@ -1,0 +1,24 @@
+import java.util.*;
+public class Problem {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sa=new Scanner(System.in);
+int a=sa.nextInt();
+int f1[]=new int[a];
+f1[0]=0;f1[1]=1;
+int sum=0;
+int count=2;
+for(int i=2;i<a;i++) {
+	f1[i]=f1[i-1]+f1[i-2];
+	count++;
+	if(count==a) {
+		count=f1[i];
+	}
+}
+System.out.println(count);
+		
+}
+}
+
+Input: 8
+Output: 13
