@@ -1,0 +1,60 @@
+
+import java.util.Scanner;
+
+class EmailValidation{
+	String email;
+	public EmailValidation(String email) {
+		this.email=email;
+	}
+	boolean checkEmail() {
+		boolean checkEndDot=false;
+		int indexOfAt=email.indexOf('@');
+		int lastIndexOfAt=email.lastIndexOf('.');
+		int countOfAt=0;
+		for(int i=0;i<email.length();i++) {
+			if(email.charAt(i)=='@')
+				countOfAt++;
+		}
+		String buffering =email.substring(email.indexOf('@')+1,email.length());
+		int len=buffering.length();
+		int countOfDotAfterAt=0;
+		for(int i=0;i<len;i++) {
+			if(buffering.charAt(i)=='.')
+				countOfDotAfterAt++;
+		}
+		String userName=email.substring(0,email.indexOf('@'));
+		String domainName=email.substring(email.indexOf('.')+1,email.length());
+		int domainCheck=0;
+		if((domainName.equals("in")) || (domainName.equals("com")) || (domainName.equals("net")) || (domainName.equals("biz")))
+				domainCheck=1;
+		int spellCheck=0;
+		String spell=email.substring(email.indexOf('@')+1,email.lastIndexOf('.'));
+		if((spell.equals("gmail")) || (spell.equals("yahoo")))
+			spellCheck=1;
+		
+		if((countOfAt==1) && (userName.endsWith(".")==false) && (domainCheck==1) && (countOfDotAfterAt==1) && ((indexOfAt+3)<=(lastIndexOfAt)&& !checkEndDot) && (spellCheck==1))
+	{
+			return true;
+		}
+		else {
+			return false;
+		}
+		}
+	}
+
+public class Guvi2{
+    public static void main(String args[]){
+    	Scanner sc=new Scanner(System.in);
+        String email=sc.next();               //sa@gmail.com
+EmailValidation ev=new EmailValidation(email);
+if(ev.checkEmail()==true)
+	System.out.println("Valid : "+email);
+else
+	System.out.println("Invalid : "+email);
+    }
+}
+
+
+
+Input: s@gmail.com
+Output: Valid: s@gmail.com
