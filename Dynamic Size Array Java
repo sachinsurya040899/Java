@@ -1,0 +1,71 @@
+import java.util.*;
+public class Stack {
+public static void main(String args[]){
+	Scanner sa=new Scanner(System.in);
+	int c=2;
+	int s[]=new int[c];
+	int top=0;
+	String co="yes";
+	while(!co.equals("no")) {
+		System.out.println("Enter Choice 1: add 2: show");
+      int n=sa.nextInt();
+	switch(n) {
+	case 1: if(top==c) {
+		int new_s[]=new int[c*2];
+		System.arraycopy(s, 0, new_s, 0, c);
+		s=new_s;
+		c*=2;
+	}
+	System.out.println("Enter Element");
+			s[top]=sa.nextInt();
+      top++;
+			break;
+	case 2: for(int a:s)
+		System.out.println(a+" ");
+	break;
+	}
+	System.out.println("Do You Want To Continue yes/no");
+	sa.nextLine();
+	co=sa.nextLine();
+	}
+}
+}
+
+
+
+
+
+
+Runtime Input / Output :
+Enter Choice 1: add 2: show
+1
+Enter Element
+22
+Do You Want To Continue yes/no
+y
+Enter Choice 1: add 2: show
+1
+Enter Element
+33
+Do You Want To Continue yes/no
+y
+Enter Choice 1: add 2: show
+1
+Enter Element
+44
+Do You Want To Continue yes/no
+y
+Enter Choice 1: add 2: show
+1
+Enter Element
+55
+Do You Want To Continue yes/no
+y
+Enter Choice 1: add 2: show
+2
+22 
+33 
+44 
+55 
+Do You Want To Continue yes/no
+no
