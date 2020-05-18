@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sa=new Scanner(System.in);
+	int i,j;
+	String a=sa.nextLine();
+	String a1[]=a.split(" ");
+	String a2=a1[0].toString();
+	String a3[]=a2.split("");
+	int n=Integer.parseInt(a1[1]);
+	int n1=n-1;
+	for( i=0;i<a3.length;i++) {
+		if(i==n1) {
+			a3[i]=a3[i].toUpperCase();	
+			n1=n1+n;
+		}
+	}
+	String ans=String.join("",a3);
+	System.out.println(ans);
+    }
+}
+
+
+Given a string and a number K, change every kth character to uppercase from beginning in string.
+Sample Testcase :
+INPUT
+string 2
+OUTPUT
+sTrInG
