@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+       	Scanner sa=new Scanner(System.in);
+	String a=sa.nextLine();
+	String a1[]=a.split(" ");
+	for(int i=0;i<a1.length;i++) {
+		if(a1[0]=="and")
+			continue;
+		else if(a1[i].equals("and")){
+			String t=a1[i+1];
+			a1[i+1]=a1[i-1];
+			a1[i-1]=t;
+		}
+	}
+	String a2=String.join(" ", a1);
+	System.out.print(a2);
+    }
+}
+
+
+
+Given a sentence interchange the between the word 'and'.
+Input Size : |S| <= 1000000
+Sample Testcase :
+INPUT
+jack and jill went up and down to get water
+OUTPUT
+jill and jack went down and up to get water
