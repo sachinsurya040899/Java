@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sa=new Scanner(System.in);
+	int n=sa.nextInt();
+	int k=sa.nextInt();
+	int a[]=new int[n];
+	int count=0;
+	for(int i=0;i<a.length;i++) {
+		a[i]=sa.nextInt();
+	}
+	for(int i=0;i<a.length;i++) {
+		if(a[i]==k)
+			count++;
+		else
+			continue;
+	}
+	if(count>0)
+		System.out.print("yes");
+	else
+		System.out.print("no");
+    }
+}
+
+
+
+
+
+Given 2 numbers N,K and an array of N integers, find if the element K exists in the array.
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+5 2
+1 2 3 4 5
+OUTPUT
+yes
