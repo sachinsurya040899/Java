@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.util.regex.*;
+public class Stack {
+    public static void main(String[] args) {
+      	Scanner sc=new Scanner(System.in);
+      	String a="sachin";
+      	String b="sachinsurya";
+      	int i=0,j=0;
+      	Pattern p=Pattern.compile(a);
+      	Matcher m=p.matcher(b);
+      	while(m.find()) {
+      		System.out.println("Start Index :"+" "+m.start()+" "+"End Index :"+" "+m.end()+" "+"Word :"+" "+m.group());
+      		i=m.start();
+          	j=m.end();
+      	}
+      	for(;i<j;i++) {
+      		System.out.println(b.charAt(i));
+      	}
+    }
+}
+
+
+
+
+Output :
+Start Index : 0 End Index : 6 Word : sachin
+s
+a
+c
+h
+i
+n
