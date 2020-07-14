@@ -1,0 +1,40 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sa=new Scanner(System.in);
+      int a=sa.nextInt();
+      int b=sa.nextInt();
+      int s[][]=new int[a][b];
+      for(int i=0;i<a;i++)
+    	  for(int j=0;j<b;j++)
+    		  s[i][j]=sa.nextInt();
+      for(int i=0;i<b;i++) {
+    	  int k=0,t=1;
+    	  for(int j=0;j<b;j++) {
+    		  if(s[k][i]==s[t][j]) {
+    			 int temp=s[t][i];
+    			 s[t][i]=s[t][j];
+    			 s[t][j]=temp;
+    		  }
+    	  }
+      }
+      for(int i=0;i<a;i++) {
+    	  for(int j=0;j<b;j++) {
+    		  System.out.print(s[i][j]);
+    	  }
+    	  System.out.println();
+      }
+    }
+}
+
+
+Input:
+2 3
+1 2 3
+2 1 3
+
+Output:
+1 2 3
+1 2 3
+
+// the rows are same as the first row (Constraint)
