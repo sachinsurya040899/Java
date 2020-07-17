@@ -14,4 +14,3 @@
 
 <> Follow Up On Twitter|YouTube|Facebook
 
-<img src='https://github.com/sachinsurya040899'
